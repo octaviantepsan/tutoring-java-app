@@ -1,0 +1,28 @@
+Collections.sort(vehiclearray, new Comparator<Vehicle>() {
+    public int compare(Vehicle v1, Vehicle v2) {
+        return v1.getEmail().compareTo(v2.getEmail());
+    }
+});
+
+//sorteaza array-ul vehiclearray ( poate fi o variabila, gen array-ul din colectie ) alfabetic dupa email
+chestiile care tin de vehicle si email sunt cele care pot fi schimbate
+
+pentru afisarea unui array sortat, vom folosi for(Sedinta sedinta: sedinte) ( sedinte este array-ul din colectie luat cu o noua metoda getSedinteArray() care este deja in clasa ColectieSedinte
+Astfel, parcurgand intregul array, la fiecare pas vom creea un JPanel in care vom scrie sedinta.toString()
+
+deci avem codul:
+
+var sedinte = new ArrayList<Sedinta>();
+sedinte = colectieSedinte.getSedinteArray(); // in sedinte vom avea array-ul cu TOATE obiectele 
+
+Collections.sort(sedinte, new Comparator<Sedinta>() {
+    public int compare(Sedinta s1, Sedinta s2){
+        return v1.getCod().compareTo(v2.getCod());
+    }
+});
+
+for(Sedinta sedinta: sedinte){
+	var labelText = new JLabel();
+	
+
+}
